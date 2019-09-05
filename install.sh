@@ -35,33 +35,33 @@ echo -n "Creating templates... "
 sleep 1
 echo "Done"
 
-echo "Installing Guake... "
+echo "Installing Guake... 🔴"
 ./install-guake.sh
-echo "Done"
+echo "Done 🏁"
 
-echo "Installing Tmux... "
+echo "Installing Tmux... 🔴"
 ./install-tmux.sh
-echo "Done"
+echo "Done 🏁"
 
-echo "Installing Enpass... "
+echo "Installing Enpass... 🔴"
 ./install-enpass.sh
-echo "Done"
+echo "Done 🏁"
 
-echo "Installing Snapcraft... "
+echo "Installing Snapcraft... 🔴"
 ./install-snapcraft.sh
-echo "Done"
+echo "Done 🏁"
 
-echo "Installing Visual Studio Code... "
+echo "Installing Visual Studio Code... 🔴"
 ./install-vscode.sh
-echo "Done"
+echo "Done 🏁"
 
-echo "Installing Ledger Live... "
+echo "Installing Ledger Live... 🔴"
 ./install-ledger-live.sh
-echo "Done"
+echo "Done 🏁"
 
-echo "Installing Chrome... "
+echo "Installing Chrome... 🔴"
 ./install-chrome.sh
-echo "Done"
+echo "Done 🏁"
 
 cd ..
 rm -rf .ubuntu-setup
