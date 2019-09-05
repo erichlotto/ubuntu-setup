@@ -14,7 +14,7 @@ fi
 #  then echo "Please run with sudo 🔒"
 #  exit
 #fi
-echo "sudo privileges granted 🔑🔓"
+echo "sudo privileges granted 🔑"
 
 cd ~
 rm -rf .ubuntu-setup
