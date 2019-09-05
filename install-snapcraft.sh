@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo apt install snapd
+sudo apt install -qq -y snapd
