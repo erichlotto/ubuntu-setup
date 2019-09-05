@@ -12,5 +12,5 @@ echo "sudo privileges granted 🔑🔓"
 
 cd ~
 mkdir ubuntu-setup && cd ubuntu-setup
-wget https://github.com/erichlotto/ubuntu-setup/blob/master/helpers.sh
-wget https://github.com/erichlotto/ubuntu-setup/blob/master/install-chrome.sh
+wget -q --show-progress https://github.com/erichlotto/ubuntu-setup/blob/master/helpers.sh
+wget -q --show-progress https://github.com/erichlotto/ubuntu-setup/blob/master/install-chrome.sh
