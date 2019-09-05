@@ -4,10 +4,16 @@ echo "AWESOME! Let's begin building your new system... 🤓"
 sleep 3
 
 # CHECK IF USING ROOT
-if [ $EUID > 0 ]
-  then echo "Please run with sudo 🔒"
-  exit
+then echo "Please run with sudo 🔒"
+if [ $EUID != 0 ]; then
+    sudo "$0" "$@"
+    exit $?
 fi
+
+#if [ $EUID > 0 ]
+#  then echo "Please run with sudo 🔒"
+#  exit
+#fi
 echo "sudo privileges granted 🔑🔓"
 
 cd ~
