@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-echo "AWESOME! Let's begin building your new system... 🤓"
+echo "AWESOME! Let's begin building your new system... 2 🤓"
 sleep 3
 
 # CHECK IF USING ROOT
