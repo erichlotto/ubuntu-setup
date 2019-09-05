@@ -1,10 +1,10 @@
 #!/bin/bash
 clear
-echo "AWESOME! Let's begin building your new system..."
+echo "AWESOME! Let's begin building your new system... 🤓"
 sleep 3
 
 # CHECK IF USING ROOT
-if [[ $EUID > 0 ]]
+if [ $EUID > 0 ]
   then echo "Please run with sudo 🔒"
   exit
 fi
