@@ -1,31 +1,24 @@
 #!/bin/bash
 clear
 echo "AWESOME! Let's begin building your new system... 🤓"
-sleep 3
+sleep 1
 
 # CHECK IF USING ROOT
-echo "Please run with sudo 🔒"
-if [ $EUID != 0 ]; then
-    sudo "$0" "$@"
-    exit $?
-fi
+echo "We need sudo privileges from now on 🔒"
 
-#if [ $EUID > 0 ]
-#  then echo "Please run with sudo 🔒"
-#  exit
-#fi
-echo "sudo privileges granted 🔑"
+sudo id>null && echo "sudo privileges granted 🔑" || exit
+
 
 cd ~
 rm -rf .ubuntu-setup
 mkdir -p .ubuntu-setup && cd .ubuntu-setup
 echo -n "📄 Downloading scripts... "
-wget -q https://github.com/erichlotto/ubuntu-setup/blob/master/helpers.sh
-wget -q https://github.com/erichlotto/ubuntu-setup/blob/master/create-templates.sh
-wget -q https://github.com/erichlotto/ubuntu-setup/blob/master/install-chrome.sh
-wget -q https://github.com/erichlotto/ubuntu-setup/blob/master/install-enpass.sh
-wget -q https://github.com/erichlotto/ubuntu-setup/blob/master/install-snapcraft.sh
-wget -q https://github.com/erichlotto/ubuntu-setup/blob/master/install-vscode.sh
+wget -q https://raw.githubusercontent.com/erichlotto/ubuntu-setup/master/helpers.sh
+wget -q https://raw.githubusercontent.com/erichlotto/ubuntu-setup/master/create-templates.sh
+wget -q https://raw.githubusercontent.com/erichlotto/ubuntu-setup/master/install-chrome.sh
+wget -q https://raw.githubusercontent.com/erichlotto/ubuntu-setup/master/install-enpass.sh
+wget -q https://raw.githubusercontent.com/erichlotto/ubuntu-setup/master/install-snapcraft.sh
+wget -q https://raw.githubusercontent.com/erichlotto/ubuntu-setup/master/install-vscode.sh
 echo "DONE"
 
 echo -n "Fixing permissions... "
