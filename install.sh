@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-echo "AWESOME! Let's begin building your new system... 2 🤓"
+echo "AWESOME! Let's begin building your new system... 🤓"
 sleep 3
 
 # CHECK IF USING ROOT
@@ -11,8 +11,12 @@ fi
 echo "sudo privileges granted 🔑🔓"
 
 cd ~
-mkdir -p ubuntu-setup && cd ubuntu-setup
+rm -rf .ubuntu-setup
+mkdir -p .ubuntu-setup && cd .ubuntu-setup
 echo -n "📄 Downloading scripts... "
 wget -q https://github.com/erichlotto/ubuntu-setup/blob/master/helpers.sh
 wget -q https://github.com/erichlotto/ubuntu-setup/blob/master/install-chrome.sh
+wget -q https://github.com/erichlotto/ubuntu-setup/blob/master/install-enpass.sh
+wget -q https://github.com/erichlotto/ubuntu-setup/blob/master/install-snapcraft.sh
+wget -q https://github.com/erichlotto/ubuntu-setup/blob/master/install-vscode.sh
 echo "DONE"
