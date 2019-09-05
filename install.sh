@@ -60,5 +60,5 @@ echo "Installing Ledger Live... "
 echo "Done"
 
 echo "Installing Chrome... "
-#./install-chrome.sh
+./install-chrome.sh
 echo "Done"
