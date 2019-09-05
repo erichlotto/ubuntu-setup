@@ -33,9 +33,7 @@ echo "Installing Tmux..."
 sudo apt install -y tmux
 
 echo "Installing Enpass..."
-sudo -i
-echo "deb https://apt.enpass.io/ stable main" > /etc/apt/sources.list.d/enpass.list
-wget -O - https://apt.enpass.io/keys/enpass-linux.key | apt-key add -
-apt update
-apt install -y enpass
-exit
+sudo echo "deb https://apt.enpass.io/ stable main" > /etc/apt/sources.list.d/enpass.list
+sudo wget -O - https://apt.enpass.io/keys/enpass-linux.key | apt-key add -
+sudo apt update
+sudo apt install -y enpass
