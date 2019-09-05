@@ -1,4 +1,4 @@
-source ./helpers.sh
+source helpers.sh
 
 #sudo apt install libxss1 libappindicator1 libindicator7 -y
 
