@@ -43,3 +43,10 @@ wget -O ~/.local/share/icons/appimagekit-ledger-live-desktop.png https://lh3.goo
 wget -O ~/.local/share/applications/ledger-live.AppImage https://download-live.ledger.com/releases/latest/download/linux
 sudo chmod +x ~/.local/share/applications/ledger-live.AppImage
 ~/.local/share/applications/ledger-live.AppImage
+
+echo "Installing snapcraft..."
+sudo apt install snapd
+
+echo "Installing Visual Studio Code..."
+sudo snap install --classic code # or code-insiders
+
