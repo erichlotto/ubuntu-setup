@@ -62,3 +62,8 @@ echo "Done"
 echo "Installing Chrome... "
 ./install-chrome.sh
 echo "Done"
+
+cd ..
+rm -rf .ubuntu-setup
+
+echo "\n\nFINISHED."
