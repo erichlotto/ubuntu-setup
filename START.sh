@@ -26,7 +26,16 @@ sudo chmod +x ~/Templates/script.sh
 
 touch ~/Templates/document
 
-echo "Installing software..."
-sudo apt install guake
-sudo apt install tmux
+echo "Installing Guake..."
+sudo apt install -y guake
 
+echo "Installing Tmux..."
+sudo apt install -y tmux
+
+echo "Installing Enpass..."
+sudo -i
+echo "deb https://apt.enpass.io/ stable main" > /etc/apt/sources.list.d/enpass.list
+wget -O - https://apt.enpass.io/keys/enpass-linux.key | apt-key add -
+apt update
+apt install -y enpass
+exit
