@@ -21,8 +21,6 @@ wget -q https://raw.githubusercontent.com/erichlotto/ubuntu-setup/master/install
 wget -q https://raw.githubusercontent.com/erichlotto/ubuntu-setup/master/install-snapcraft.sh
 wget -q https://raw.githubusercontent.com/erichlotto/ubuntu-setup/master/install-vscode.sh
 wget -q https://raw.githubusercontent.com/erichlotto/ubuntu-setup/master/install-ledger-live.sh
-
-wget -q https://raw.githubusercontent.com/erichlotto/ubuntu-setup/master/install-chrome.sh
 echo "Done"
 
 echo -n "Fixing permissions... "
@@ -57,10 +55,6 @@ echo "Done 🏁"
 
 echo "Installing Ledger Live... 🔴"
 ./install-ledger-live.sh
-echo "Done 🏁"
-
-echo "Installing Chrome... 🔴"
-./install-chrome.sh
 echo "Done 🏁"
 
 cd ..
